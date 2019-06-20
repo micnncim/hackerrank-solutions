@@ -19,6 +19,16 @@ func Test_repeatedString(t *testing.T) {
 			n:    1000000000000,
 			want: 1000000000000,
 		},
+		{
+			s:    "ceebbcb",
+			n:    817723,
+			want: 0,
+		},
+		{
+			s:    "gfcaaaecbg",
+			n:    547602,
+			want: 164280,
+		},
 	}
 
 	for _, tt := range tests {
